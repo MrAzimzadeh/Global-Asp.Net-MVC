@@ -1,6 +1,6 @@
 
-# Asp.Net mvc kullanılarak Global web sitesine arka uç eklendi
-"Global" web sitesi "Ücretsiz css" olarak paylaşıldı. Bu site yalnızca Ön uçtan oluşuyordu. arka ucunu ve Yönetici panelini Asp.net kullanarak oluşturduk
+# Added backend to Global website using Asp.Net mvc
+Shared "Global" website as "Free css". This site consisted of Front-end only. we created backend and Admin panel using Asp.net
 
 ## Authors and Acknowledgments
 
