@@ -1,0 +1,14 @@
+@model Banner
+
+<form method="post">
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" value="@Model.Title">
+    </div>
+    <div class="form-group">
+        <label for="SubTitle">Content </label>
+        <input type="text" class="form-control" id="SubTitle" name="SubTitle" value="@Model.SubTitle">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,34 @@
+@model Banner
+<form class="container-xl" method="post" enctype="multipart/form-data">
+    <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Title</span>
+        <input type="text" name="title" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg">
+    </div>
+    <br>
+    <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Content </span>
+        <input type="text" name="subTitle" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg">
+
+    </div>
+    <div class="d-flex">
+        <button type="submit" class="btn btn-primary w-50">Submit</button>
+        <a class="btn btn-warning w-50">Back</a>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+@section Scripts{
+    <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+}

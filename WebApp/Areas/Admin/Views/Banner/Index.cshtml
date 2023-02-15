@@ -1,0 +1,45 @@
+@model List<Banner>
+
+<div class="container">
+    <div>
+        <a href="/admin/banner/create" class="btn btn-primary w-100">Create</a>
+    </div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    content
+                </th>
+                <th>
+                    Options
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>
+                        @item.Title
+                    </td>
+                    <td>
+                        @item.SubTitle
+                    </td>
+                    <td>
+                        <a href="/admin/banner/detail/@item.Id" class="btn btn-info">Detail</a>
+                        <a href="/admin/banner/edit/@item.Id" class="btn btn-primary" >Update</a>
+                        <a href="/admin/banner/delete/@item.Id  " class="btn btn-warning">Delete</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
